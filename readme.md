@@ -1,5 +1,5 @@
 # Sprint 7
-Este proyecto está hecho en Django v5.0 y Python v3.11.5
+
 
 ## Pasos a seguir:
 

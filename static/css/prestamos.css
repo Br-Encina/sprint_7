@@ -1,0 +1,129 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+select, input {
+    display: block;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2%;
+    text-align: center;
+    width: 60vw;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin-bottom: 1vw;
+}
+
+h3, h4, p, h5, h6 {
+    margin: 2%;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    width: 70vw;
+}
+
+form button {
+    background-color: rgba(97, 15, 99, 0.868);
+    font-size: 1.5rem;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 1% 8%;
+    margin-top: 2vh;
+}
+
+#limites {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-bottom: 4vh;
+    gap: 10px;
+}
+
+#limites_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.account_type {
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 20vw;
+    gap: 5px;
+    padding: 2%;
+    height: 20vw;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.classic {
+    background: linear-gradient(to top, transparent, 60%, rgb(36, 36, 36)), url(https://t1.uc.ltmcdn.com/es/posts/9/6/6/retos_para_hacer_en_familia_51669_600.webp);
+    background-position: center;
+    
+}
+
+.gold {
+    background: linear-gradient(to top, transparent, 60%, rgb(36, 36, 36)), url(https://media.gq.com.mx/photos/5be9eeb584b96e7fb394165e/master/w_1600,c_limit/experiencias_de_lujo_9720.jpg);
+    background-position: center;
+}
+    
+.black {
+    background: linear-gradient(to top, transparent, 60%, rgb(36, 36, 36)), url(https://www.uic.mx/wp-content/uploads/2021/09/Depositphotos_reloj_bienes_de_lujo_uic-scaled.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.account_type h6  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  font-size: 1.2em;
+
+}
+
+.title {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+}
+
+#limites h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.35rem;
+    margin-bottom: 5%;
+}
+
+#limites h5 {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+html {   
+    height: unset !important;
+}
+

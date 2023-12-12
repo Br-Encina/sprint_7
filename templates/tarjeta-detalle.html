@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{%load static%}
+
+
+{% block title%}
+Neko Bank - DETALLE TARJETA
+{%endblock%}
+{% block username%}
+{{username}}
+{%endblock%}
+{% block head%}
+<link rel='stylesheet' href="{% static 'css/tarjeta-detalle.css' %}">
+{%endblock%}
+
+
+{% block content%}
+
+<h2 class='title'>Tarjeta nro {{tarjeta.card_number}}
+</h2>
+<span class="plastico">
+
+   
+
+    <h2>Neko Bank</h2>
+
+    <h1>1111 2222 3333 4444</h1>
+
+    <div class="date">
+        <div class="fecha-expiracion">
+            <p>desde 05/23</p>
+            
+        </div>
+        <div class="fecha-impresion">
+            <p>hasta  07/27</p>
+        </div>
+    </div> 
+        
+    
+</span>
+
+<h3>{{tarjeta.card_type}}</h3>
+<h3>{{tarjeta.card_issuer}}</h3>
+{%if tarjeta.related_account %}
+<p>{{tarjeta.related_account}}</p>
+</div>
+{% endif %}
+
+<a href='../'> Back</a>
+{%endblock%}

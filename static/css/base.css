@@ -1,0 +1,83 @@
+html {   
+    background: linear-gradient(135deg, rgba(84, 47, 86, 1) 0%, rgba(124, 56, 93, 1) 20%, rgba(180, 79, 103, 1) 40%, rgba(248, 120, 111, 1) 60%, rgba(255, 186, 116, 1) 80%);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: 200vh;
+   
+}
+
+body{
+    margin: 0;
+}
+header {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+}
+
+header a, header h1 {
+    color: white;
+    text-decoration: none;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+.option1, .option2, .option3, .option4 {
+    border: 1px solid gray;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 15vw;
+    text-decoration: none;
+    width: 90vw;
+}
+
+.option1 {
+    background-color: rgba(84, 47, 86, 1);
+}
+
+.option2 {
+    background-color: rgb(124, 56, 93);
+}
+
+.option3 {
+    background-color: rgba(248, 120, 111, 1);
+}
+
+.option4 {
+    background-color: rgba(255, 186, 116, 1);
+}
+
+.opciones_home {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.title {
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 2rem;
+    margin: 6vh 0;
+    text-align: center;
+}
+
+#logout {
+    margin-right: 3vw;
+}

@@ -1,0 +1,45 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 2% auto;
+}
+
+#signup-button {
+    font-size: 1.5rem;
+    background-color: lightgreen;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2% 5%;
+    margin: 3% 0;
+    cursor: pointer;
+}
+
+input,
+select,
+label,
+span,
+li,
+p {
+    font-size: 1.5rem;
+    margin: 1% 0;
+    border-radius: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: 1.5%;
+    margin: 1% 0;
+}

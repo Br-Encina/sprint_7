@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{%load static%}
+
+{% block title%}
+Neko Bank - PRESTAMOS
+{%endblock%}
+
+{% block username%}
+{{username}}
+{%endblock%}
+{% block head%}
+<link rel='stylesheet' href="{% static 'css/prestamos.css' %}">
+{%endblock%}
+
+{% block content%}
+<h2 class='title'>PRESTAMOS</h2>
+<div id='limites'>
+    <h4>Paquetes disponibles</h4>
+    <div id='limites_list'>
+        <div class='account_type classic'>
+            <h6>Classic $100.000</h6>
+            
+        </div>
+        <div class='account_type gold'>
+            <h6>Gold $300.000</h6>
+            
+        </div>
+        <div class='account_type black'>
+            <h6>Black $500.000</h6>
+            
+        </div>
+    </div>
+    <h5>Eres cliente {{customer_type}}</h5>
+</div>
+<form method='POST'>
+    <h2>Formulario de Prestamos</h2>
+    {%csrf_token%}
+    {% if form.non_field_errors %}
+        <div class="error">
+            {% for error in form.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+        </div>
+    {% endif %}
+    {{form.as_p}}
+    <button type='submit'>Solicitar</button>
+</form>
+{%endblock%}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title%}
+Neko Bank - HOME
+{%endblock%}
+{% block username%}
+{{username}}
+{%endblock%}
+
+{% block content%}
+<h2 class='title'>Bienvenido {{username}}</h2>
+<div class='opciones_home'>
+    <a href='cuentas' class='option1'>
+     Mis Cuentas
+    </a>
+    <a href='tarjetas' class='option2'>
+    Tarjetas Asociadas 
+    </a>
+    <a href='prestamos' class='option3'>
+    Prestamos
+    </a>
+    <a href='movimientos' class='option4'>
+     Ultimos Movimientos
+    </a>
+</div>
+{%endblock%}
